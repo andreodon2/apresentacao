@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Arial', 'Arial Narrow', sans-serif;
+}
+
+.cabecalho{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 1rem;
+}
+
+.principal{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    background-color: #e3e3e3;
+    padding: 1rem;
+    
+}
+
+.principal li{
+    list-style-type: none;
+}
+
+.principal section.experiencia{
+    margin: 1rem;
+}
+
+.experiencia li {
+    padding-bottom: 0.5rem;
+}
