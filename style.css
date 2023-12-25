@@ -30,10 +30,37 @@ body{
     list-style-type: none;
 }
 
-.principal section.experiencia{
+.principal section.experiencia, .objetivo, footer {
     margin: 1rem;
 }
 
 .experiencia li {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
+
+footer>h3 {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.redes-sociais {
+    text-align: center;
+}
+
+.redes-sociais a {
+    display: inline;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+footer>h4 {
+    text-align: center;
+    padding: 30px 0 15px 0;
+}
+
+.formulario {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+

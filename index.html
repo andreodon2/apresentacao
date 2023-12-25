@@ -18,7 +18,7 @@
         <!--Início Bloco principal-->
         <div>
             <hr>
-            <section>
+            <section class="objetivo">
                 <h3>Objetivos</h3>
                 <p><strong>Trabalhar como Front-end</strong> nesta empresa, participando e ajudando a resolver problemas dos clientes de forma conceitual.</p>
             </section>
@@ -122,7 +122,7 @@
                             <strong>Curso:</strong> CST - Análise de Desenvolvimento de Sistemas
                         </li>
                         <li>
-                            3º Semestre
+                            5º Semestre
                         </li>
                         <p>
                             O curso me capacita para trabalhar em diversas áreas do desenvolvimento de software, a exemplo de:
@@ -193,21 +193,25 @@
         <div>
             <footer>
                 <h3>Acesse minhas redes sociais</h3>
-                <a href="https://www.instagram.com/andreodonn/" target="_blank"><img src="img/logo-insta.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
+                <div class="redes-sociais">    
+                    <a href="https://www.instagram.com/andreodonn/" target="_blank"><img src="img/logo-insta.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
 
-                <a href="https://www.linkedin.com/in/andreodon/" target="_blank"><img src="img/logo-linkedin.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
+                    <a href="https://www.linkedin.com/in/andreodon/" target="_blank"><img src="img/logo-linkedin.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
 
-                <a href="mailto:andreodon@gmail.com?subject=Vim de seu site" target="_blank"><img src="img/logo-gmail.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
+                    <a href="mailto:andreodon@gmail.com?subject=Vim de seu site" target="_blank"><img src="img/logo-gmail.png" alt="Logo do instagram em efeito negativo" width="3%"></a>
+                </div>
 
                 <h4>Entre em contato comigo</h4>
-                <form>
-                    <strong>Nome: </strong><input type="text" name="nome" id="nome" placeholder="Escreva seu nome">
+                <form class="formulario">
+                    <strong>Nome: </strong><input type="text" name="nome" id="nome" placeholder="Escreva seu nome"><br/>
+
+                    <strong>Email: </strong><input type="email" name="email" id="email" placeholder="seuemail@email.com.br">
 
                     <h4>Esvreva sua mensagem</h4>
-                    <textarea rows="8" cols="40">
+                    <textarea rows="8" cols="40" id="msg">
                         
                     </textarea><br>
-                    <input type="submit">
+                    <input type="submit" onclick="enviarFormulario()">
                 </form>
 
                 <p>
@@ -218,5 +222,30 @@
         </div>
         <!--Fim Rodapé-->
     </main>
+    <script>
+        window.alert('Desculpe, este projeto ainda está em construção. Por isso o design ainda está incompleto e as funcionalidades para envio de mensagens ainda não está operacional.')
+
+        function enviarFormulario() {
+            let nome = window.document.querySelector('input#nome').value;
+            let email = window.document.querySelector('input#email').value;
+            let msg = window.document.querySelector('textarea#msg').value;
+
+            let dadosFormulario = {
+                nome: nome,
+                email: email,
+                msg: msg
+            };
+
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST','smtp.gmail.com', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify(dadosFormulario));
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    window.alert('Mensagem enviada com sucesso!')
+                }
+            };
+        }
+    </script>
 </body>
 </html>
