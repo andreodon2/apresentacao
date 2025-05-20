@@ -1,7 +1,12 @@
 # React + Vite
 
 ## Onde parei
-- Parei no cabeçalho
+- Parei no rodapé (falta completar)
+
+## Iniciar o projeto
+- Entrar no diretório Vite\apresentacao
+- Rodar o comando:
+    - npm run dev
 
 ## Sobre o Vite
 
