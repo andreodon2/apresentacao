@@ -4,18 +4,6 @@ import LogoInsta from '../assets/logo-insta.png'
 import LogoLinkedin from '../assets/logo-linkedin.png'
 import LogoGmail from '../assets/logo-gmail.png'
 
-function enviarFormulario(){
-                        let nome = window.document.querySelector('input#nome').value;
-                        let email = window.document.querySelector('input#email').value;
-                        let msg = window.document.querySelector('textarea#msg').value;
-
-                        let dadosFormulario = {
-                            nome: nome,
-                            email: email,
-                            msg: msg
-                        };
-                    }
-
 function Footer(){
     return (
         <>
