@@ -6,12 +6,47 @@ function Main() {
         <>
             {/* Objetivo */}
             <hr/>
-            <section class="objetivo">
+            <section className="objetivo">
                 <h3>Objetivos</h3>
                 <p><strong>Trabalhar como Front-end</strong> nesta empresa, participando e ajudando a resolver problemas dos clientes de forma conceitual.</p>
             </section>
             <hr/>
 
+            {/* Início da experiência FCP */}
+            <section className="experiencia">
+                <h3>Experiências profissionais</h3>
+                <p>
+                    <strong>Empresa:</strong> Fundação Cultural do Pará
+                    <ul>
+                        <li>
+                            <strong>Função:</strong> Estagiário de TI
+                        </li>
+                        <li>
+                            <strong>Atividades:</strong>
+                            <p>
+                                O setor de obras abriga um acervo com dezenas de milhares de obras históricas e relevantes na história do estado do Pará. Atuei na gerência de equipe do setor de digitalização de obras raras. Através do nosso trabalho, pesquisadores de todo o mundo que entendem o português do Brasil, têm acesso ao nosso acervo virtual contendo diversas obras desde legislações até documentos históricos datados desde o século XVI. Neste departamento executei:
+                            </p>
+                            <p>Atuei como estagiário da equipe do setor de obras raras. Este departamento executa:</p>
+                            <ul>
+                                <li class="segundo">
+                                    Digitalização de documentos históricos;
+                                </li>
+                                <li class="segundo">
+                                    Inclusão destes documentos em forma digital no portal de obras raras da Fundação Cultural do Pará;
+                                </li>
+                                <p>
+                                    <strong>Minhas contribuições:</strong>
+                                    <p>
+                                        Após o início dos trabalhos, recebi muitos elogios devido ao meu desempenho e qualidade das digitalizações e inserções destas obras no site de Obras Raras da FCP.
+                                    </p>
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            {/* Fim da experiência FCP */}
+            
             {/* Início da experiência APPP */}
             <section className="experiencia">
                 <h3>Experiências profissionais</h3>
@@ -64,7 +99,7 @@ function Main() {
             {/* Fim da experiência APPP */}
 
             {/* Início da experiência Republicanos */}
-            <section class="experiencia">
+            <section className="experiencia">
                 <p>
                     <strong>Empresa:</strong> Partido Republicanos <em>Temporário</em>
                     <ul>
@@ -103,7 +138,7 @@ function Main() {
             <hr />
             
             {/* Início formação acadêmica */}
-            <section class="experiencia">
+            <section className="experiencia">
                 <h3>Formação acadêmica</h3>
                 <p>
                     <p><strong>Universidade Estácio de Sá</strong></p>
@@ -133,7 +168,7 @@ function Main() {
             {/* Fim formação acadêmica- */}
 
             {/* Início Formação complementar */}
-            <section class="experiencia">
+            <section className="experiencia">
                 <h3>Formação complmentar</h3>
                 <ul>
                     <li>

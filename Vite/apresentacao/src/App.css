@@ -1,0 +1,53 @@
+/* Início cabeçalho */
+
+.cabecalho{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 5px 5px 5px #747373;
+}
+
+/* Fim Cabeçalho */
+
+/* Início corpo */
+
+hr{
+    width: 1215px;
+}
+
+body{
+    background-color: #b3b3b3;
+}
+
+section > h3{
+    text-align: center;
+}
+
+.objetivo, .experiencia{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 5px 5px 5px #747373;
+}
+
+/* Fim corpo */
+
+/* Início Rodapé */
+
+footer{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 5px 5px 5px #747373;
+}
+
+footer > h3{
+    text-align: center;
+}

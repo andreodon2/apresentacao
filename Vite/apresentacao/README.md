@@ -1,7 +1,7 @@
 # React + Vite
 
 ## Onde parei
-- Parei no rodapé (falta completar)
+- Parei na formatação do front-end (incompleto)
 
 ## Iniciar o projeto
 - Entrar no diretório Vite\apresentacao
